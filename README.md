@@ -3,7 +3,7 @@
 # macMAKE
 
 <p align="center">
-  <img src="img/logo.png" alt="macMAKE" width="600">
+  <img src="img/logo.png" alt="macMAKE">
 </p>
 
 **macMAKE is a modern build environment for developing software for Classic Mac OS from Linux.**
