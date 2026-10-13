@@ -1,12 +1,16 @@
 # Getting Started
 
-This guide follows the `examples/first-app` project included with the macMAKE v0.1.0 candidate. Check the [Downloads page](https://macmake.dev/downloads.html) for release availability; the candidate is not a public download until approved.
+This guide follows the `examples/first-app` project included with the public macMAKE v0.1.0 release. Install with the [Linux installation guide](https://macmake.dev/install.html) or download the [versioned v0.1.0 archive](https://github.com/mplsllc/macMAKE/releases/tag/v0.1.0).
+
+The one-command installer installs macMAKE and its bundled Linux toolchain. It does not include Apple Universal Interfaces, Metrowerks MSL archives, or other proprietary historical SDK material. Obtain and use those files only from sources you are authorized to use.
 
 ## Requirements
 
-- Linux x86-64 (validated on Ubuntu 24.04; Debian 13 is the documented compatible baseline).
+- Linux x86-64 (the release archive and clean installation were validated on Ubuntu 24.04).
 - macMAKE v0.1.0 and its bundled compiler/toolchain.
 - Authorized CodeWarrior MSL archives and Apple Universal Interfaces inputs for this example. They are not included with macMAKE.
+
+The v0.1 release target is Classic Mac OS 9 PowerPC CFM/PEF, using a C-focused workflow. Broad CodeWarrior C++ compatibility, 68K, and Mac OS X targets are outside its supported scope.
 
 ## Discover the installed CLI
 

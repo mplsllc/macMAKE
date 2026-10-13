@@ -1,0 +1,16 @@
+macMAKE FIRST APPLICATION EXAMPLE LICENSE
+
+Copyright © 2026 MPLS LLC. All rights reserved.
+
+MPLS LLC grants you a worldwide, non-exclusive, no-fee license to use,
+reproduce, modify, compile, and distribute the source files and scripts in the
+`examples/first-app` directory as part of, or in aid of, software you develop.
+You may distribute source or executable applications that incorporate or are
+built from that example under terms of your choice. This permission does not
+cover the macMAKE executable, Apple or Metrowerks SDK materials, or any other
+third-party component; those retain their own licenses.
+
+You may not rehost or sell the unmodified example as a standalone macMAKE
+release or use MPLS LLC's name to imply endorsement. Preserve this notice in
+redistributed copies of the example files. The example is provided "AS IS" to
+the maximum extent permitted by law, without warranty or liability.

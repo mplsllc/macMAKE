@@ -76,13 +76,13 @@ In other words:
 
 ## Current status
 
-macMAKE v0.1.0 is prepared as an initial Linux x86-64 release. The matching GNU toolchain corresponding source is publicly available; the proprietary binary remains unpublished pending its separate owner authorization. See [Downloads](https://macmake.dev/downloads.html) for current availability.
+macMAKE v0.1.0 is the initial public Linux x86-64 release. It supports a C-focused workflow for building Classic Mac OS 9 PowerPC CFM/PEF applications. It is not a complete CodeWarrior replacement; broad C++ parity, 68K targets, and Mac OS X targets are outside this release.
 
-The validated v0.1 scope builds Classic Mac OS 9 PowerPC CFM/PEF applications with a C-focused workflow. It is not a complete CodeWarrior replacement. C++ ABI/runtime parity, 68K targets, and Mac OS X targets are outside this release.
+Start at [macmake.dev](https://macmake.dev), follow the [installation guide](https://macmake.dev/install.html), or read [Getting Started](https://macmake.dev/getting-started.html). The packaged first-app example requires authorized Apple Universal Interfaces and Metrowerks MSL material supplied by the user; these proprietary SDK files are not included.
 
 ## Source availability
 
-The macMAKE core is **proprietary software**.
+MPLS LLC owns the original macMAKE implementation. The macMAKE core is **proprietary and closed-source software**; the public binary license grants the stated development-use rights but does not grant public redistribution of the proprietary executable.
 
 This repository is the public home of the project, documentation, examples, issue tracking, and binary releases. It does **not** contain the proprietary macMAKE implementation.
 
@@ -90,7 +90,7 @@ macMAKE makes use of existing open-source software where appropriate. Source cod
 
 The presence of GPL-licensed components in the distributed toolchain does not mean that the proprietary macMAKE components are themselves released under the GPL.
 
-See [docs/licensing.md](docs/licensing.md) for the v0.1.0 component boundaries, proposed proprietary terms, corresponding-source identity, and current approval status.
+See [docs/licensing.md](docs/licensing.md) for the v0.1.0 component boundaries and corresponding-source identity. The proprietary binary license applies only to the macMAKE executable and identified proprietary files; GCC, Binutils, runtime components, examples, and Rust dependencies retain their own licenses.
 
 ## Historical SDKs and libraries
 
@@ -118,7 +118,7 @@ macMAKE builds on decades of Macintosh development knowledge. It should not be c
 
 ## Releases
 
-No public v0.1.0 binary is available until the release is approved. When available, the versioned Linux x86-64 archive, checksum, component manifest, release notes, and matching GNU source reference will be linked from this repository and [macmake.dev](https://macmake.dev).
+Download the [macMAKE v0.1.0 Linux x86-64 release](https://github.com/mplsllc/macMAKE/releases/tag/v0.1.0). Its release page includes the archive, SHA-256 checksum, component manifest, and release notes. The exact [GNU corresponding-source release](https://github.com/mplsllc/macmake-gpl/releases/tag/macmake-v0.1.0-toolchain-sources) is published separately.
 
 The CLI requires a project path. From a configured project directory, a supported build command looks like:
 
@@ -130,8 +130,12 @@ Use `macmake help` and `macmake help build` in the installed version for its com
 
 ## Project links
 
-- Website: https://macmake.dev
-- Open-source component source: [`macmake-gpl`](https://github.com/mplsllc/macmake-gpl)
-- Issues: use this repository's GitHub issue tracker
+- Website: [macmake.dev](https://macmake.dev)
+- Install: [Linux installation instructions](https://macmake.dev/install.html)
+- Getting started: [first application guide](https://macmake.dev/getting-started.html)
+- CLI reference: [commands, project format, and JSON schemas](https://macmake.dev/docs/cli-reference.html)
+- Releases: [GitHub Releases](https://github.com/mplsllc/macMAKE/releases)
+- GNU corresponding source: [macMAKE v0.1.0 toolchain sources](https://github.com/mplsllc/macmake-gpl/releases/tag/macmake-v0.1.0-toolchain-sources)
+- Issues: [GitHub issue tracker](https://github.com/mplsllc/macMAKE/issues)
 
 For offline, version-accurate command help, use `macmake help` and `macmake help build` in the installed binary.
