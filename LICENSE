@@ -1,41 +1,94 @@
-macMAKE License Notice
-======================
+macMAKE PROPRIETARY BINARY LICENSE — VERSION 1.0
 
-Copyright (c) 2026 Minneapolis LLC. All rights reserved.
+Copyright © 2026 MPLS LLC. All rights reserved.
 
-The macMAKE build system core, command-line interface, project engine,
-semantic linker, and associated proprietary tools are proprietary software.
+This license applies only to the macMAKE proprietary executable and
+other original macMAKE binary components expressly identified as proprietary in
+the release manifest (the “Proprietary Components”). It does not apply to
+GCC, GNU Binutils, Rust dependencies, runtime files, example files, or other
+components that carry their own license or notice (collectively,
+“Third-Party Components”). The component inventory and each included license
+notice govern those components. This text does not change or limit any rights
+under a Third-Party Component license.
 
-Redistribution and use in binary form, with or without modification, are
-permitted provided that the following conditions are met:
+1. Permission to use
 
-1. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions, and the disclaimer below in the documentation
-   and/or other materials provided with the distribution.
+Subject to this license, MPLS LLC grants the recipient a worldwide,
+non-exclusive, no-fee license to download from an MPLS LLC authorized channel,
+install, run, and use the Proprietary Components for personal, educational,
+research, nonprofit, and commercial software development. Use with coding
+agents, scripts, continuous-integration systems, and automated build
+infrastructure is permitted.
 
-2. Neither the name of the copyright holder nor the names of its contributors
-   may be used to endorse or promote products derived from this software
-   without specific prior written permission.
+An individual recipient may install and use macMAKE on multiple computers
+that the recipient owns or is authorized to use. An organization that is the
+recipient may permit its employees and contractors to install and use copies
+on computers and CI environments controlled or authorized by that organization
+for its internal development work. An organization may also permit a hosting or
+CI service provider to hold and run a copy solely as the organization's agent
+for that work, under the organization's instructions and access controls. Such
+operators receive no independent license or right to distribute macMAKE.
 
-3. The core source code of macMAKE is proprietary and is not provided under
-   an open-source license.
+The recipient and organization may make a reasonable number of copies needed
+for those permitted installations and for internal backup and recovery. Copies
+must retain this license and the applicable MPLS LLC copyright notice and must
+remain limited to the recipient's or organization's authorized environment.
 
-Third-Party Components and Licenses
------------------------------------
-macMAKE utilizes certain open-source tools (such as GCC and GNU Binutils)
-under their respective licenses. Source code and patches for redistributed
-GPL-covered components are provided in the separate public repository:
-https://github.com/mplsllc/macmake-gpl
+No subscription, license fee, activation server, registration, telemetry, or
+mandatory online service is required to exercise these permissions for v0.1.
 
-DISCLAIMER
-----------
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+2. Restrictions on the Proprietary Components
+
+Unless MPLS LLC gives express written authorization, the recipient may not:
+
+- publicly distribute, publish, mirror, or rehost a Proprietary Component;
+- sell, sublicense, or otherwise make a Proprietary Component available outside
+the recipient's authorized internal environment;
+- distribute a modified copy of a Proprietary Component; or
+- remove or alter MPLS LLC proprietary notices included with a Proprietary
+Component.
+
+These restrictions do not prohibit the internal installations, copies, CI use,
+or service-provider operation expressly allowed in section 1. They do not
+apply to Third-Party Components; those components may be used and redistributed
+as their own licenses permit.
+
+3. Applications and other developer work
+
+The recipient retains ownership and licensing control of source code and other
+independent work the recipient creates. Using macMAKE to compile, link, inspect,
+or package an independent application does not transfer that application's
+ownership to MPLS LLC and does not, by itself, place that independent work under
+this license. Any Third-Party Component code incorporated into an application,
+including compiler runtime code, remains subject to the license and notices
+applicable to that code.
+
+4. Copyright and marks
+
+The Proprietary Components are owned by MPLS LLC and/or its licensors and are
+protected by applicable law. This license does not grant ownership, a trademark
+license, or a right to imply MPLS LLC endorsement. The recipient may identify
+macMAKE by name only as reasonably necessary to describe its use, without
+suggesting sponsorship or endorsement.
+
+5. Disclaimer and limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE PROPRIETARY COMPONENTS
+ARE PROVIDED “AS IS,” WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MPLS
+LLC AND ITS CONTRIBUTORS WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, DATA, OR
+BUSINESS INTERRUPTION, ARISING FROM OR RELATING TO USE OF THE PROPRIETARY
+COMPONENTS. NOTHING IN THIS SECTION EXCLUDES LIABILITY THAT APPLICABLE LAW DOES
+NOT ALLOW TO BE EXCLUDED.
+
+6. Term
+
+This license takes effect when the recipient obtains the Proprietary
+Components from an MPLS LLC authorized distribution channel. The license
+continues while the recipient complies with its terms. If the recipient
+materially breaches this license, MPLS LLC may terminate the permissions after
+written notice and a reasonable opportunity to cure, to the extent permitted
+by applicable law. Termination of this license does not terminate or restrict
+rights in any Third-Party Component.

@@ -76,13 +76,9 @@ In other words:
 
 ## Current status
 
-macMAKE is under active development and is not yet being presented as a finished replacement for CodeWarrior.
+macMAKE v0.1.0 is prepared as an initial Linux x86-64 release candidate. Public release remains pending final owner and qualified licensing approval; see [Downloads](https://macmake.dev/downloads.html) for current availability.
 
-Substantial Classic PowerPC applications compile through increasingly large portions of the toolchain, and current work is focused on closing the remaining runtime, C++ ABI, library, relocation, and linker compatibility gaps exposed by real CodeWarrior-era software.
-
-Early releases should be considered experimental.
-
-Compatibility will expand as more applications are tested.
+The validated v0.1 scope builds Classic Mac OS 9 PowerPC CFM/PEF applications with a C-focused workflow. It is not a complete CodeWarrior replacement. C++ ABI/runtime parity, 68K targets, and Mac OS X targets are outside this release.
 
 ## Source availability
 
@@ -94,7 +90,7 @@ macMAKE makes use of existing open-source software where appropriate. Source cod
 
 The presence of GPL-licensed components in the distributed toolchain does not mean that the proprietary macMAKE components are themselves released under the GPL.
 
-See the licensing documentation accompanying each release for the exact components and licenses involved.
+See [docs/licensing.md](docs/licensing.md) for the v0.1.0 component boundaries, proposed proprietary terms, corresponding-source identity, and current approval status.
 
 ## Historical SDKs and libraries
 
@@ -104,7 +100,7 @@ Some compatibility and historical-development workflows may require users to pro
 
 Where macMAKE can provide independently redistributable replacements or metadata, those can be distributed separately.
 
-The project will document these requirements clearly as public releases develop.
+The v0.1 first-build guide explains SDK registration and user-supplied MSL setup in [docs/getting-started.md](docs/getting-started.md).
 
 ## Prior art and acknowledgements
 
@@ -122,15 +118,15 @@ macMAKE builds on decades of Macintosh development knowledge. It should not be c
 
 ## Releases
 
-Binary releases will be published through this repository when macMAKE reaches a suitable public testing stage.
+No public v0.1.0 binary is available until the release is approved. When available, the versioned Linux x86-64 archive, checksum, component manifest, release notes, and matching GNU source reference will be linked from this repository and [macmake.dev](https://macmake.dev).
 
-The intended workflow is ultimately simple:
+The CLI requires a project path. From a configured project directory, a supported build command looks like:
 
 ```sh
-macmake build
+macmake build . --target "Classic PPC C"
 ```
 
-The complexity required to produce a correct Classic Macintosh application should belong in the toolchain, not in every individual project.
+Use `macmake help` and `macmake help build` in the installed version for its complete offline command reference.
 
 ## Project links
 
@@ -138,4 +134,4 @@ The complexity required to produce a correct Classic Macintosh application shoul
 - Open-source component source: [`macmake-gpl`](https://github.com/mplsllc/macmake-gpl)
 - Issues: use this repository's GitHub issue tracker
 
-More documentation will be added as the first public release approaches.
+For offline, version-accurate command help, use `macmake help` and `macmake help build` in the installed binary.
