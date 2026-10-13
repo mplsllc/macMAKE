@@ -76,7 +76,7 @@ In other words:
 
 ## Current status
 
-macMAKE v0.1.0 is prepared as an initial Linux x86-64 release candidate. Public release remains pending final owner and qualified licensing approval; see [Downloads](https://macmake.dev/downloads.html) for current availability.
+macMAKE v0.1.0 is prepared as an initial Linux x86-64 release. The matching GNU toolchain corresponding source is publicly available; the proprietary binary remains unpublished pending its separate owner authorization. See [Downloads](https://macmake.dev/downloads.html) for current availability.
 
 The validated v0.1 scope builds Classic Mac OS 9 PowerPC CFM/PEF applications with a C-focused workflow. It is not a complete CodeWarrior replacement. C++ ABI/runtime parity, 68K targets, and Mac OS X targets are outside this release.
 
