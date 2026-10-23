@@ -9,7 +9,9 @@ rlib="$rust_root/target/powerpc-apple-macos/release/libmacmake_rust_value.rlib"
 mkdir -p -- "$output_dir"
 (
     cd -- "$rust_root"
-    rustc -vV | grep -Fq 'commit-hash: 2036fdd24f77d607dcfaa24c48fbe85d3f785823'
+    # Capture first: grep -q can close a pipe early and cause rustc to SIGPIPE.
+    rustc_version=$(rustc -vV)
+    grep -Fq 'commit-hash: 2036fdd24f77d607dcfaa24c48fbe85d3f785823' <<<"$rustc_version"
     cargo build --manifest-path Cargo.toml \
         -Zbuild-std=core \
         -Zbuild-std-features=compiler-builtins-mem \

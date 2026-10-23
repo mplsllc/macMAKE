@@ -89,6 +89,10 @@ from the macMAKE build above. This example's host build and structural
 inspection are separately reproducible; OS runtime testing must be recorded
 for the exact macMAKE executable and Mac OS version used.
 
+## Version-check regression tests
+
+Run `python3 test-version-check.py` to exercise the build helper's compiler-version gate without installing Rust or the SDK. The tests cover matching, mismatched and empty output, output larger than a pipe buffer, and a failing compiler that prints a matching version.
+
 ## Troubleshooting
 
 - **Nightly Rust toolchain error**: Ensure `rustup toolchain install nightly-2023-03-28 --component rust-src` has been executed. The pinned target requires `-Zbuild-std=core`.
