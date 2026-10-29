@@ -32,6 +32,12 @@ It is not a CodeWarrior emulator and it is not a frontend for Retro68. The goal 
 <p align="center"><strong>Thanks to our supporters:</strong><br>Ko-Fi: <strong>Chris Marks, Rogue, Turuun, kilgeist</strong><br>Patreon: <strong>Mack Chamberlain, Lucas, Joseph Mulvaney, Shlooom, Bigdipper</strong></p>
 
 ---
+## Next release: CLEAR developer preview (in preparation)
+
+The next release is being tested with a **CLEAR-first** development path: supported Classic Mac OS applications built without proprietary CodeWarrior implementation libraries or Apple SDK development headers. Historical CodeWarrior/MSL compatibility remains an **explicit optional setup**, using a pinned subset of [macMAKELibs](https://github.com/mplsllc/macMAKELibs) or developer-supplied paths; it must not silently enter a CLEAR build.
+
+[Read the CLEAR preview scope and clean-install acceptance requirements](docs/clear-preview.md). **v0.1.1 remains the latest public release** until the new candidate has been built, tested, and published. The preview's capabilities are not claims about the existing v0.1.1 binary.
+
 ## What macMAKE does
 
 macMAKE provides an end-to-end development workflow on Linux x86-64 for creating Classic Macintosh applications:
